@@ -5,8 +5,8 @@ import joblib
 import plotly.express as px
 
 df = pd.read_csv("WA_Fn-UseC_-HR-Employee-Attrition.csv")
-model = joblib.load("../model/attrition_model.pkl")
-scaler = joblib.load("../model/scaler.pkl")
+model = joblib.load("attrition_model.pkl")
+scaler = joblib.load("scaler.pkl")
 
 df["Attrition_Num"] = df["Attrition"].map(
     {"Yes": 1, "No": 0}
