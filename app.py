@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 import plotly.express as px
 
-df = pd.read_csv(r"C:\Users\akshi\OneDrive\Desktop\employee_attrition\venv\WA_Fn-UseC_-HR-Employee-Attrition.csv")
+df = pd.read_csv("WA_Fn-UseC_-HR-Employee-Attrition.csv")
 model = joblib.load("../model/attrition_model.pkl")
 scaler = joblib.load("../model/scaler.pkl")
 
